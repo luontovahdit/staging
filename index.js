@@ -21,6 +21,7 @@ require('dotenv').config();
 
 let app = express();
 app.use(bodyParser.json())
+app.use(express.static('client/build/'))
 
 const port = process.env.PORT || 8000;
 
@@ -192,7 +193,7 @@ app.use("/profile", isUserLogged, profileRoute);
 app.use('/api/hotspots', hotspotsRouter)
 app.use('/api/comments', commentsRouter)
 app.use('/api/users', usersRouter)
-app.use(express.static('client/build'))
+
 
 
 

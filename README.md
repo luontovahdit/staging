@@ -39,6 +39,7 @@ npm start
 
 ### Development roadmap
 
+* Improve map performance on feature layer interactions. 
 * Implement backend functionality for image CRUD operations against Cloudinary API
 * Implement user position with (mobile) Leaflet
 * Improve registering / logging
